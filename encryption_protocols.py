@@ -56,7 +56,7 @@ def bb84(n_bits=20):
     return bb84_time
 
 
-def e91(n_pairs=10):  # Reduced n_pairs for illustration
+def e91(n_pairs=10): 
     start_time = time.time()
     circuit = qiskit.QuantumCircuit(2 * n_pairs, 2 * n_pairs)
 
@@ -64,8 +64,8 @@ def e91(n_pairs=10):  # Reduced n_pairs for illustration
         circuit.h(i)
         circuit.cx(i, i + 1)
 
-    angles_alice = np.pi / 4  # Example angle for Alice
-    angles_bob = np.pi / 8  # Example angle for Bob
+    angles_alice = np.pi / 4
+    angles_bob = np.pi / 8
 
     for i in range(0, 2 * n_pairs, 2):
         circuit.ry(angles_alice, i)

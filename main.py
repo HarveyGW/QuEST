@@ -20,7 +20,6 @@ def run_experiments(n=20):
         e91_time = e91()
         e91_times.append(e91_time)
 
-    # Creating a DataFrame for analysis
     data = {
         "RSA Time": rsa_times,
         "BB84 Time": bb84_times,
@@ -61,7 +60,7 @@ def plot():
     plt.tight_layout()
     plt.savefig(
         "protocol_times_line_chart.png"
-    )  # Saving the plot for inclusion in your poster
+    )
     plt.show()
 
 

@@ -31,7 +31,6 @@ def xor_encrypt_decrypt(message, key):
         encrypted_decrypted_chars.append(encrypted_decrypted_char)
     return ''.join(encrypted_decrypted_chars)
 
-# Example usage:
 key = generate_quantum_key(10)
 print(f"Generated key: {key}")
 
